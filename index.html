@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>Big Mac Cop</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.3.0/turf.min.js"></script>
+
+	<style>
+		#map{
+width:1250px;
+height:600px;
+position:relative;}
+		
+		.multicolor-text{
+	font-family:Georgia,serif;
+	font-weight:600;
+	font-stretch:ultra-expanded;
+font-size:xxx-large;
+text-align:center;
+background:linear-gradient(to left,
+		red,red,yellow,yellow);
+-webkit-background-clip:text;
+color:transparent;}
+
+		header{
+		font-family:Brush Script MT, Brush Script Std, cursive;
+		font-stretch:expanded;
+		font-size:xx-large;
+		color:black;
+		}
+		
+		img{
+		max-width:25%;
+		max-height:25%;
+		}
+		
+		#wrapper {
+  position: relative;
+}
+
+#locateButton {
+  position: absolute;
+  top: 30px;
+  left: 1090px; 
+  z-index: 1000; 
+}
+		
+	</style>
+	
+	<div class="multicolor-text">Big Mac Cop in Oregon</div>
+	<hr>
+	<br>
+
+</head>
+<body>
+<div>
+	<img src='big_mac_cop.png' alt='Big Mac Cop' style='width:100px;height:170px;float:left;margin-right:40px;'>
+	<p>Big Mac Cop gives you a tour of McDonald's through the state of Oregon. There are 158 McDonald's locations within the state,<br>
+	 and Big Mac Cop knows all of them. Tell him where to go by clicking on the map. He can then tell you where the Mcdonald's locations<br>
+	 are within a certain radius that you set as well as the price of Big Macs at that location. He is very knowledgable. If you talk to <br>
+	him he can give you a lot of information on the area.</p>
+	<p>Big Mac Cop likes to use this method as a way of showing the Big Mac index. Created by the Economist magazine, the Big Mac index <br>
+	is a tongue-in-cheek way of showing different price levels between countries. Knowledge of price level influence exchange rates and any <br>
+	disparities between them. While economists do not actually use the Big mac index to decide exchange rates, it is fun way of generalizing <br>
+	possible realities. This <a href="https://en.wikipedia.org/wiki/Big_Mac_Index">Wikipedia article</a> talks about it more.
+	</p>
+</div>
+
+<div id="wrapper">
+  <button id="locateButton">Find me Big Mac Cop!</button>
+  <div id="map"></div>
+</div>
+
+<script src="maccyD.js"></script>
+
+</body>
+
+</html>
