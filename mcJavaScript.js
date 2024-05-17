@@ -48,7 +48,7 @@ map.on('click', function (e) {
 	
 	
 	
-    fetch('https://raw.githubusercontent.com/pelaaaa/geog_371_lab_3/main/mcpoints.geojson')
+    fetch('https://raw.githubusercontent.com/pelaaaa/BigMacMap/main/mcpoints.geojson')
         .then(response => response.json())
         .then(pointsData => {
             var turfPoints = turf.featureCollection(pointsData.features);
@@ -170,7 +170,7 @@ locateButton.addEventListener('click', geolocateUser);
 function foundUser(latlng,marky){
 	
 var pointster = turf.point(latlng);
-fetch('https://raw.githubusercontent.com/pelaaaa/geog_371_lab_3/main/mcpoints.geojson')
+fetch('https://raw.githubusercontent.com/pelaaaa/BigMacMap/main/mcpoints.geojson')
         .then(response => response.json())
         .then(pointsData => {
             var turfPoints = turf.featureCollection(pointsData.features);
