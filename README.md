@@ -1,1 +1,2 @@
-Final project for GEOG 371: Web Mapping taken in the fall of 2023.
+Final project for GEOG 371: Web Mapping. 
+Taken in the fall of 2023.
